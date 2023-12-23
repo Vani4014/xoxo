@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My cutu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f00; /* Red background color */
+            color: #fff; /* White text color */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        button {
+            background-color: #fff; /* White button background color */
+            color: #f00; /* Red button text color */
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ccc; /* Light gray button background color on hover */
+        }
+
+        #congratulations {
+            display: none;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you marry me?</h1>
+    <button id="yesButton" onclick="showCongratulations()">Yes ❤️</button>
+    <button id="noButton" onclick="alert('Wrong answer, you will have to.')">No</button>
+    <div id="congratulations">Congratulations!YOU ARE MINE🎉</div>
+
+    <script>
+        function showCongratulations() {
+            document.getElementById('yesButton').style.display = 'none';
+            document.getElementById('noButton').style.display = 'none';
+            document.getElementById('congratulations').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
